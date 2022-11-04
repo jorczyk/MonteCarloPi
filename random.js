@@ -1,9 +1,3 @@
-// function getRandomPoint(x_max, x_min, y_max, y_min, n) {
-//     var x = getRandomInt(x_min, x_max);
-//     var y = getRandomInt(y_min, y_max);
-//     return new Point(x, y);
-// }
-
 function getRandomPoint(boundaries) {
     var x = getRandomInt(boundaries.x_min, boundaries.x_max);
     var y = getRandomInt(boundaries.y_min, boundaries.y_max);

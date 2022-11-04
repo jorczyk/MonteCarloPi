@@ -14,12 +14,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
-function windowResized() {
-  // resizeCanvas(windowWidth, windowHeight);
-  // center = new Point(windowWidth/2, windowHeight/2);
-  // console.log(center.x, center.y);
-}
-
 function draw() {
   background(220);
   setStyleForText();
@@ -27,13 +21,9 @@ function draw() {
   setStyleForBackgound();
   rect(center.x-side/2, center.y-side/2, side, side);
   ellipse(center.x, center.y, side, side);
-  // var c = color(255, 204, 0);
-  // fill(c);
-  // noStroke();
   if(smartPoints.length < numberOfPoints) {
     getNextPoint();
   }
-  // console.log(smartPoints);
   drawPoints(smartPoints);
 
 }
